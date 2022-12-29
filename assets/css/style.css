@@ -1,3 +1,10 @@
+/* *font Family zum einbinden
+font-family: Playfair, sans-serif;
+font-family: Poppins, sans-serif;
+
+
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +17,21 @@ html{
     max-width: 1400px;
 }
 
+
+/* ***************** font Family **************** */
+@font-face {
+    font-family: Playfair;
+    src: url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins/Poppins-Light.ttf");
+}
+    
+
+/* ********************* Body *********************+ */
+
 body{
     height: 100vh;
     background-color: #ecf1e1;
@@ -18,37 +40,53 @@ body{
 }
 
 section {
-    background-color: orange;
     display: flex;
     margin-top: 20vh;
     margin-left: 10vw;
     height: 40vh;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 10vw;
+    width: 30.5vw;
     z-index: 10;
 }
 
 .ueberschrift{
-    background-color: red;
+    font-family: Playfair, sans-serif;
+    font-size: 2rem;
+    margin-left: -11rem;
+    width: 17vw;
+   s text-transform: uppercase;
+}
+
+.ueberschrift span::first-letter{
+    background-color: yellow;
+    font-size: 8rem;
+}
+
+.text {
+    font-family: Poppins, sans-serif;
     
 
 }
 
-.text {
-    background-color:blue;
-}
-
 .button {
     background-color: green;
+    font-family: Poppins, sans-serif;
+    padding: 1rem 5rem;
+    border-radius: 10rem;
+    font: size 4rem;
+    box-shadow: 5px 5px 20px grey;
+    background-color: orange;
+    text-decoration: none;
+
 }
 
 img {
-    border: 1px solid black;
     position: absolute;
     z-index: -1;
     max-width: 50%;
     top: -20vh;
-left: 40vw;
+left: 25vw;
     
 }
